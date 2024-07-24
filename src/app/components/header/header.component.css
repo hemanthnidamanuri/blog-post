@@ -1,0 +1,15 @@
+.mat-toolbar-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.spaces {
+    flex: 1 1 auto;
+}
+
+.mat-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+

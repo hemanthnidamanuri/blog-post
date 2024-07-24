@@ -1,0 +1,16 @@
+<div class="search-container-fluid">
+    <div class="mat-form-search">
+        <mat-form-field class="search-form-field" appearance="outline">
+            <mat-label>search</mat-label>
+            <input class="search-input" matInput [(ngModel)]="searchText" (keyup.enter)="onSearch()">
+            <button class="search-button" matSuffix (click)="onSearch()">
+                <mat-icon class="search-icon">search</mat-icon>
+            </button>
+        </mat-form-field>
+    </div>
+    <div class="buttons-container">
+        <button mat-fab extended class="action-button" routerLink="/createPost"><mat-icon>add</mat-icon>Create</button>
+        <button mat-fab extended class="action-button" routerLink="/deletePost"><mat-icon>delete</mat-icon>Delete</button>
+        <button mat-fab extended class="action-button" routerLink="/favoritePost"><mat-icon>favorite</mat-icon>fav</button>
+    </div>
+</div>

@@ -1,0 +1,34 @@
+<div class="main-container">
+    <app-search></app-search>
+    <div class="card-container">
+       <li *ngFor="let blog of blogs;  index as i;">
+        <mat-card class="small-card">
+            <mat-card-header>
+                <div mat-card-avatar class="card-avatar">
+                    <img *ngIf="blog.user.userPicture; else blogPicture" [src]="blog.user.userPicture" alt="User Avatar">
+                    <ng-template #blogPicture>
+                        <img [src]="blog.picture" alt="Blog Picture">
+                    </ng-template>
+                </div>
+                <mat-card-title class="card-content">{{blog.title}}</mat-card-title>
+                <mat-card-subtitle class="card-content">{{blog.subtitle}}</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image [src]="blog.picture" alt="Blog Picture">
+            <mat-card-content>
+                <p class="card-content">{{blog.content}}</p>
+            </mat-card-content>
+            <mat-card-actions>
+                <button mat-button>likes: {{blog.likes}}</button>
+                <button mat-button>share</button>
+            </mat-card-actions>
+        </mat-card>
+       </li>
+    </div>
+    <div class="paginator-container">
+        <mat-paginator [length]="length"
+            [pageSize]="pageSize"
+            [pageSizeOptions]="pageSizeOptions"
+            (page)="handlePageEvent = $event">
+        </mat-paginator>
+    </div>
+</div>
