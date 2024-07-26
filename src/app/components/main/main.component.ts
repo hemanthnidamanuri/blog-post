@@ -8,6 +8,7 @@ import {Blog} from '../../interfaces';
 import { CommonModule } from '@angular/common';
 import { MatPaginatorModule, PageEvent } from '@angular/material/paginator';
 import { PAGE_SIZE, PAGE_SIZE_OPTIONS, PAGINATOR_LENGTH } from '../../constants';
+
 @Component({
   selector: 'app-main',
   standalone: true,

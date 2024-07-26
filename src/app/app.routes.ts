@@ -1,3 +1,5 @@
 import { Routes } from '@angular/router';
-
-export const routes: Routes = [];
+import { CreatePostComponent } from './components/create-post/create-post.component';
+export const routes: Routes = [
+    {path: '', redirectTo: '/home', pathMatch: 'full'}
+];

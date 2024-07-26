@@ -7,41 +7,6 @@
     padding-top: 10px;
 }
 
-.mat-form-search .mat-form-field-flex {
-    background-color: #cdc3c3;
-    border-radius: 25px;
-    padding: 0 15px;
-}
-
-.mat-form-search .mat-form-field-outline {
-    display: none;
-}
-
-.mat-form-search .mat-form-field-infix {
-    padding: 0.5em 0;
-    border-top: none;
-}
-
-.mat-form-search .search-input {
-    color: #333;
-    font-size: 16px;
-}
-
-/* Changing the color of the label */
-.mat-form-search .mat-form-field-label {
-    color: #2a2fb7;
-}
-
-/* Styling the search button */
-.mat-form-search .search-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-.mat-form-search .search-icon {
-    color: #555;
-}
 
 .search-button {
     border: none;
